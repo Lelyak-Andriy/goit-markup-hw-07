@@ -17,25 +17,27 @@
 <body>
     <!-- Заголовок сайта -->
     <header class="header">
-        <div class="container page-header">
+        <div class="container container__header">
             <!-- Логотип посилання-->
-            <a href="index.html" class="logo"> <span class="logo-blue">Web</span>Studio </a>
+            <a href="index.html" class="logo  header__logo"> <span class="header__logo--accent">Web</span>Studio </a>
             <!--Навігація по сайту-->
             <!-- current підсвічує активну сторінку -->
             <nav>
                 <ul class="site-nav">
-                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <!-- Контактна інформація-->
             <ul class="header-contact">
-                <li class="item"><a href="mailto:info@devstudio.com" class="header-contact-link"> <svg
-                            class="icon-envelope">
+                <li class="header-contact__item"><a href="mailto:info@devstudio.com" class="header-contact__link">
+                        <svg class="header-contact__icon-envelope">
                             <use href="./images/symbol-defs-opt.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="header-contact-link"> <svg class="icon-phone">
+                <li class="header-contact__item"><a href="tel:+380961111111" class="header-contact__link">
+                        <svg class="header-contact__icon-phone">
                             <use href="./images/symbol-defs-opt.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
@@ -45,14 +47,14 @@
     <main>
         <section class="section">
             <div class="container">
-            <h1 class="visually-hidden">Портфолиo работ</h1>
+            <h1 class="section-name--visually-hidden">Портфолиo работ</h1>
             <!--Фільтр кнопок-->
             <ul class="portfolio">
-                <li class="choise"><button type="button" class="pointer primary-button">Все</button></li>
-                <li class="choise"><button type="button" class="pointer primary-button">Веб-сайты</button></li>
-                <li class="choise"><button type="button" class="pointer primary-button">Приложения</button></li>
-                <li class="choise"><button type="button" class="pointer primary-button">Дизайн</button></li>
-                <li class="choise"><button type="button" class="pointer primary-button">Маркетинг</button></li>
+                <li class="portfolio__item"><button type="button" class="pointer portfolio__button">Все</button></li>
+                <li class="portfolio__item"><button type="button" class="pointer portfolio__button">Веб-сайты</button></li>
+                <li class="portfolio__item"><button type="button" class="pointer portfolio__button">Приложения</button></li>
+                <li class="portfolio__item"><button type="button" class="pointer portfolio__button">Дизайн</button></li>
+                <li class="portfolio__item"><button type="button" class="pointer portfolio__button">Маркетинг</button></li>
             </ul>
             
             <!--Список робіт-->
@@ -170,41 +172,47 @@
 
     </main>
     <footer class="footer">
-        <div class="container flexible">
-            <!-- Логотип посилання-->  
+        <div class="container container__footer">
+            <!-- Логотип посилання-->
             <div class="logo-container">
-            <a href="index.html" class="logo footer-logo"> <span class="logo-blue">Web</span><span
-                    class="logo-white">Studio</span></a>
-            <!-- Контактна інформація-->
-            <address>
-                <ul class="address">
-                    <li class="item address-item">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li class="item"><a href="mailto:info@example.com" class="footer-contact-link">info@example.com</a></li>
-                    <li class="item"><a href="tel:+380991111111" class="footer-contact-link">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+                <a href="index.html" class="footer__logo">Web<span class="footer__logo--whited">Studio</span></a>
+                <!-- Контактна інформація-->
+                <address>
+                    <ul class="address">
+                        <li class="address__item">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="address__item"><a href="mailto:info@example.com"
+                                class="address__link">info@example.com</a></li>
+                        <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
             </div>
             <div class="join">
-                <h4 class="slogan">Присоединяйтесь</h4>
+                <h4 class="join__slogan">Присоединяйтесь</h4>
                 <ul class="socials">
-                    <li class="social-item"><a href="#" class="social-link"><svg class="icon-instagram">
-                                <use href="./images/symbol-defs-opt.svg#icon-instagram"></use></svg></a></li>
-                    <li class="social-item"><a href="#" class="social-link"><svg class="icon-twitter">
-                                <use href="./images/symbol-defs-opt.svg#icon-twitter"></use></svg></a></li>
-                    <li class="social-item"><a href="#" class="social-link"><svg class="icon-facebook">
-                                <use href="./images/symbol-defs-opt.svg#icon-facebook"></use></svg></a></li>
-                    <li class="social-item"><a href="#" class="social-link"><svg class="icon-linkedin">
-                                <use href="./images/symbol-defs-opt.svg#icon-linkedin"></use></svg></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><svg class="socials__icon-instagram">
+                                <use href="./images/symbol-defs-opt.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><svg class="socials__icon-twitter">
+                                <use href="./images/symbol-defs-opt.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><svg class="socials__icon-facebook">
+                                <use href="./images/symbol-defs-opt.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><svg class="socials__icon-linkedin">
+                                <use href="./images/symbol-defs-opt.svg#icon-linkedin"></use>
+                            </svg></a></li>
                 </ul>
             </div>
             <div class="sign">
-                <p class="sign-slogan">подпишитесь на рассылку</p>
+                <p class="sign__slogan">подпишитесь на рассылку</p>
                 <form class="footer-form">
                     <label>
-                        <input class="mail" type="email" name="mail" placeholder="E-mail" />
+                        <input class="footer-form__mail" type="email" name="mail" placeholder="E-mail" />
                     </label>
-                    <button type="submit" class="service-sign">Подписаться<svg class="icon-send">
-                        <use href="./images/symbol-defs-opt.svg#icon-send"></use></svg></button>
+                    <button type="submit" class="footer-form__service-sign">Подписаться<svg class="footer-form__icon-send">
+                            <use href="./images/symbol-defs-opt.svg#icon-send"></use>
+                        </svg></button>
                 </form>
             </div>
         </div>
