@@ -250,50 +250,50 @@
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="button-close-modal" data-modal-close><svg class="icon-close">
+            <button type="button" class="modal__button-close-modal" data-modal-close><svg class="modal__icon-close">
                     <use href="./images/symbol-defs-opt.svg#icon-close"></use>
                 </svg></button>
                 <form class="modal-form">
-                    <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                <div class="form-field contact-field">    
-                    <label class="form-lable">Имя
-                        <input type="text" name="user-name" class="form-input"/>
+                    <h2 class="modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">    
+                    <label class="form-field__form-lable">Имя
+                        <input type="text" name="user-name" class="form-field__form-input"/>
                         </label>
-                        <svg class="icon-man">
+                        <svg class="form-field__icon-man">
                             <use href="./images/symbol-defs-opt.svg#icon-man"></use>
                         </svg>
                     </div>
-                    <div class="form-field contact-field">
-                    <label class="form-lable">Телефон
-                        <input type="tel" name="user-tel" class="form-input"/>
+                    <div class="form-field">
+                    <label class="form-field__form-lable">Телефон
+                        <input type="tel" name="user-tel" class="form-field__form-input"/>
                     </label>
-                        <svg class="icon-phone2">
+                        <svg class="form-field__icon-phone2">
                             <use href="./images/symbol-defs-opt.svg#icon-phone2"></use>
                         </svg>
                     </div>
-                <div class="form-field contact-field">
-                     <label class="form-lable">Почта
-                         <input type="email" name="user-mail" class="form-input" />
+                <div class="form-field">
+                     <label class="form-field__form-lable">Почта
+                         <input type="email" name="user-mail" class="form-field__form-input" />
                     </label>
-                        <svg class="icon-envelope2">
+                        <svg class="form-field__icon-envelope2">
                             <use href="./images/symbol-defs-opt.svg#icon-envelope2"></use>
                         </svg>
                     </div>
-                <div class="form-field comment-field">
-                <label class="form-lable form-comment" for="comment">
+                <div class="form-field">
+                <label class="form-field__form-lable form-field__form-lable--form-comment" for="comment">
                     Комментарий</label>
-                    <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>   
+                    <textarea class="form-field__comment" name="comment" id="comment" placeholder="Введите текст"></textarea>   
                 </div>
                 
                 <label class="agree" for="agree">
-                <input class="checkbox" type="checkbox" name="agree" id="agree"/>
-                 <span class="checkbox-icon"></span>
-                <svg class="check"><use href="./images/symbol-defs-opt.svg#icon-check"></use></svg>
-                <span class="agree-text">Соглашаюсь с рассылкой и принимаю<a href="#" class="agree-link">
+                <input class="agree__checkbox" type="checkbox" name="agree" id="agree"/>
+                 <span class="agree__checkbox-icon"></span>
+                <svg class="agree__check"><use href="./images/symbol-defs-opt.svg#icon-check"></use></svg>
+                <span>Соглашаюсь с рассылкой и принимаю<a href="#" class="agree__link">
                 Условия договора</a></span>
                 </label>
                                     
-                <button type="submit" class="service-modal">Отправить</button>
+                <button type="submit" class="modal__service-button">Отправить</button>
                 </form>
         </div>
     </div>
